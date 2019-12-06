@@ -389,6 +389,12 @@
             "visits_stmts" : true
         },
         {
+            "name"  : "qvariant-deprecated",
+            "level" : 1,
+            "categories" : ["qvariant"],
+            "visits_stmts" : true
+        },
+        {
             "name"  : "qstring-left",
             "level" : 1,
             "categories" : ["bug", "performance", "qstring"],

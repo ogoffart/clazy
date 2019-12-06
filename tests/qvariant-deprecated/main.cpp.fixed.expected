@@ -1,0 +1,13 @@
+#include <QtCore/QVariant>
+
+int foo(const QVariant &v) {
+    switch (v.userType()) {
+        case QMetaType::QVariantMap: return 0;
+        case QMetaType::QVariantList: return 1;
+        case QMetaType::Int: return 2;
+        default: break;
+    }
+
+    if (v.userType() == QMetaType::QLine) return 3;
+    return 4;
+}

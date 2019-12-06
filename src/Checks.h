@@ -92,6 +92,7 @@
 #include "checks/level1/qlatin1string-non-ascii.h"
 #include "checks/level1/qproperty-without-notify.h"
 #include "checks/level1/qstring-left.h"
+#include "checks/level1/qvariant-deprecated.h"
 #include "checks/level1/range-loop.h"
 #include "checks/level1/returning-data-from-temporary.h"
 #include "checks/level1/rule-of-two-soft.h"
@@ -195,6 +196,7 @@ void CheckManager::registerChecks()
     registerCheck(check<QLatin1StringNonAscii>("qlatin1string-non-ascii", CheckLevel1,  RegisteredCheck::Option_VisitsStmts));
     registerCheck(check<QPropertyWithoutNotify>("qproperty-without-notify", CheckLevel1,  RegisteredCheck::Option_VisitsStmts));
     registerCheck(check<QStringLeft>("qstring-left", CheckLevel1,  RegisteredCheck::Option_VisitsStmts));
+    registerCheck(check<QVariantDeprecated>("qvariant-deprecated", CheckLevel1,  RegisteredCheck::Option_VisitsStmts));
     registerCheck(check<RangeLoop>("range-loop", CheckLevel1,  RegisteredCheck::Option_VisitsStmts));
     registerFixIt(1, "fix-range-loop-add-ref", "range-loop");
     registerFixIt(2, "fix-range-loop-add-qasconst", "range-loop");
