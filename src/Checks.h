@@ -41,6 +41,7 @@
 #include "checks/manuallevel/qt-keywords.h"
 #include "checks/manuallevel/qt4-qstring-from-array.h"
 #include "checks/manuallevel/qvariant-template-instantiation.h"
+#include "checks/manuallevel/qvariant-value.h"
 #include "checks/manuallevel/raw-environment-function.h"
 #include "checks/manuallevel/reserve-candidates.h"
 #include "checks/manuallevel/signal-with-return-value.h"
@@ -137,6 +138,7 @@ void CheckManager::registerChecks()
     registerCheck(check<Qt4QStringFromArray>("qt4-qstring-from-array", ManualCheckLevel,  RegisteredCheck::Option_VisitsStmts));
     registerFixIt(1, "fix-qt4-qstring-from-array", "qt4-qstring-from-array");
     registerCheck(check<QVariantTemplateInstantiation>("qvariant-template-instantiation", ManualCheckLevel,  RegisteredCheck::Option_VisitsStmts));
+    registerCheck(check<QVariantValue>("qvariant-value", ManualCheckLevel,  RegisteredCheck::Option_VisitsStmts));
     registerCheck(check<RawEnvironmentFunction>("raw-environment-function", ManualCheckLevel,  RegisteredCheck::Option_VisitsStmts));
     registerCheck(check<ReserveCandidates>("reserve-candidates", ManualCheckLevel,  RegisteredCheck::Option_VisitsStmts));
     registerCheck(check<SignalWithReturnValue>("signal-with-return-value", ManualCheckLevel,  RegisteredCheck::Option_VisitsDecls));

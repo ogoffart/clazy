@@ -170,6 +170,11 @@
             "visits_stmts" : true
         },
         {
+            "name"  : "qvariant-value",
+            "level" : -1,
+            "visits_stmts" : true
+        },
+        {
             "name"  : "unused-non-trivial-variable",
             "level" : 0,
             "categories" : ["readability"],

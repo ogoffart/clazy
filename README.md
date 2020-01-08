@@ -228,6 +228,7 @@ clazy runs all checks from level1 by default.
     - [qt-keywords](docs/checks/README-qt-keywords.md)    (fix-qt-keywords)
     - [qt4-qstring-from-array](docs/checks/README-qt4-qstring-from-array.md)    (fix-qt4-qstring-from-array)
     - [qvariant-template-instantiation](docs/checks/README-qvariant-template-instantiation.md)
+    - [qvariant-value](docs/checks/README-qvariant-value.md)
     - [raw-environment-function](docs/checks/README-raw-environment-function.md)
     - [reserve-candidates](docs/checks/README-reserve-candidates.md)
     - [signal-with-return-value](docs/checks/README-signal-with-return-value.md)

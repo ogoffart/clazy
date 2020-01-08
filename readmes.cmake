@@ -13,6 +13,7 @@ SET(README_manuallevel_FILES
     ${CMAKE_CURRENT_LIST_DIR}/docs/checks/README-qt-keywords.md
     ${CMAKE_CURRENT_LIST_DIR}/docs/checks/README-qt4-qstring-from-array.md
     ${CMAKE_CURRENT_LIST_DIR}/docs/checks/README-qvariant-template-instantiation.md
+    ${CMAKE_CURRENT_LIST_DIR}/docs/checks/README-qvariant-value.md
     ${CMAKE_CURRENT_LIST_DIR}/docs/checks/README-raw-environment-function.md
     ${CMAKE_CURRENT_LIST_DIR}/docs/checks/README-reserve-candidates.md
     ${CMAKE_CURRENT_LIST_DIR}/docs/checks/README-signal-with-return-value.md

@@ -1,0 +1,22 @@
+#include <QtCore/QVariant>
+#include <QtCore/QUrl>
+
+
+enum Foo {
+    Foo1
+};
+Q_DECLARE_METATYPE(Foo)
+
+
+void test()
+{
+    QVariant v;
+    v.toUrl(); //ok
+    v.toBool(); //ok
+    qvariant_cast<QUrl>(v); //warn
+    qvariant_cast<bool>(v); //warn
+    qvariant_cast<float>(v); //warn
+    qvariant_cast<int>(v); //warn
+    qvariant_cast<Foo>(v); //ok
+    qvariant_cast<long int>(QVariant(45));
+}

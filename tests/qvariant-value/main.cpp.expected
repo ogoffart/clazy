@@ -1,0 +1,6 @@
+qvariant-value/main.cpp:16:5: warning: Use qvariant_cast instead of QVariant::value [-Wclazy-qvariant-value]
+qvariant-value/main.cpp:17:5: warning: Use qvariant_cast instead of QVariant::value [-Wclazy-qvariant-value]
+qvariant-value/main.cpp:18:5: warning: Use qvariant_cast instead of QVariant::value [-Wclazy-qvariant-value]
+qvariant-value/main.cpp:19:5: warning: Use qvariant_cast instead of QVariant::value [-Wclazy-qvariant-value]
+qvariant-value/main.cpp:20:5: warning: Use qvariant_cast instead of QVariant::value [-Wclazy-qvariant-value]
+qvariant-value/main.cpp:21:5: warning: Use qvariant_cast instead of QVariant::value [-Wclazy-qvariant-value]
